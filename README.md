@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="src/assets/galaxy-icon.png" alt="Galaxy RBX Manager logo" width="150">
+<img src="galaxy-icon.png" alt="Galaxy RBX Manager logo" width="150">
 
 # Galaxy RBX Manager
 
@@ -84,15 +84,15 @@ Galaxy keeps each Roblox website login in its own persistent Electron partition 
 
 ### Account Center
 
-![Galaxy RBX Manager Account Center](docs/screenshots/accounts.png)
+![Galaxy RBX Manager Account Center](accounts.png)
 
 | Window Manager | Discord Webhooks |
 | --- | --- |
-| <img src="docs/screenshots/window-manager.png" alt="Galaxy Window Manager"> | <img src="docs/screenshots/discord-webhooks.png" alt="Galaxy Discord Webhooks"> |
+| <img src="window-manager.png" alt="Galaxy Window Manager"> | <img src="discord-webhooks.png" alt="Galaxy Discord Webhooks"> |
 
 ### Bootstrapper
 
-![Galaxy RBX Manager Bootstrapper](docs/screenshots/bootstrapper.png)
+![Galaxy RBX Manager Bootstrapper](bootstrapper.png)
 
 > All screenshots use Galaxy's built-in demo preview. No real Roblox session, cookie, webhook URL, or personal account data is shown.
 
