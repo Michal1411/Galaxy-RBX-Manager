@@ -172,8 +172,6 @@ To open the safe demo without Electron:
 npm.cmd run preview
 ```
 
-Then visit `http://127.0.0.1:4173/?preview=1`. Demo data is not saved and Roblox is not launched.
-
 ## Help & contact
 
 - Found a bug? Open a GitHub Issue and include the relevant Activity Console entry with secrets removed.
