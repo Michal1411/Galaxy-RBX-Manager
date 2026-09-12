@@ -208,6 +208,6 @@ The portable application does not require WebView2, but organization policy may 
 
 <div align="center">
 
-Made with care by [Michal_141](https://discord.com/users/1432824410170982402)
+Made by 💙 [Michal_141](https://discord.com/users/1432824410170982402)
 
 </div>
