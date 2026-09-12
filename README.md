@@ -15,11 +15,18 @@ Launch isolated sessions, arrange clients, watch performance, receive Discord re
 [![Discord](https://img.shields.io/badge/Discord-Michal__141-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/1432824410170982402)
 
 <br>
-<a href="https://github.com/Michal1411/Galaxy-RBX-Manager/releases/latest">
-  <img src="https://img.shields.io/badge/DOWNLOAD%20FOR%20WINDOWS-LATEST%20RELEASE-1689ff?style=for-the-badge&logo=windows11&logoColor=white" height="46" alt="Download Galaxy RBX Manager for Windows">
+<a href="https://github.com/Michal1411/Galaxy-RBX-Manager/releases">
+  <img src="download-button.svg" width="640" alt="Download Galaxy RBX Manager for Windows">
 </a>
 <br><br>
-[Features](#features) · [Screenshots](#screenshots) · [Download](#download) · [Security](#security--privacy) · [Help](#help--contact)
+
+<p>
+  <a href="#features">Features</a> ·
+  <a href="#screenshots">Screenshots</a> ·
+  <a href="#download">Download</a> ·
+  <a href="#security--privacy">Security</a> ·
+  <a href="#help--contact">Help</a>
+</p>
 
 </div>
 
