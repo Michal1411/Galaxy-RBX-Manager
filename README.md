@@ -9,10 +9,16 @@
 Launch isolated sessions, arrange clients, watch performance, receive Discord reports, and keep multi-account setups under control from one place.
 
 [![Version](https://img.shields.io/badge/version-1.0.0-7755ff?style=for-the-badge)](../../releases)
+[![Downloads](https://img.shields.io/github/downloads/Michal1411/Galaxy-RBX-Manager/total?style=for-the-badge&logo=github&label=downloads&color=22c7a9)](https://github.com/Michal1411/Galaxy-RBX-Manager/releases)
 ![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-1689ff?style=for-the-badge&logo=windows11&logoColor=white)
 ![Architecture](https://img.shields.io/badge/architecture-x64-18c99a?style=for-the-badge)
 [![Discord](https://img.shields.io/badge/Discord-Michal__141-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/1432824410170982402)
 
+<br>
+<a href="https://github.com/Michal1411/Galaxy-RBX-Manager/releases/latest">
+  <img src="https://img.shields.io/badge/DOWNLOAD%20FOR%20WINDOWS-LATEST%20RELEASE-1689ff?style=for-the-badge&logo=windows11&logoColor=white" height="46" alt="Download Galaxy RBX Manager for Windows">
+</a>
+<br><br>
 [Features](#features) · [Screenshots](#screenshots) · [Download](#download) · [Security](#security--privacy) · [Help](#help--contact)
 
 </div>
@@ -111,6 +117,27 @@ Galaxy keeps each Roblox website login in its own persistent Electron partition 
 
 Windows may show a SmartScreen warning while public code signing is not configured. Always download Galaxy from this repository's official Releases page.
 
+## Is this a virus? 🛡️
+
+The official Galaxy RBX Manager build from this repository is not designed to contain malware or steal credentials. However, Galaxy is currently **closed-source** and its Windows executable is **not digitally signed**, so Windows SmartScreen or antivirus software may show a warning until the app builds enough reputation. A warning alone does not prove that a file is malicious, but you should not ignore it blindly.
+
+Before running Galaxy:
+
+1. Download it only from this repository's official [GitHub Releases](https://github.com/Michal1411/Galaxy-RBX-Manager/releases).
+2. Compare the downloaded file's SHA-256 with the checksum published in that Release.
+3. Scan the file with Microsoft Defender and, if you want a second opinion, [VirusTotal](https://www.virustotal.com/).
+4. Do not trust reuploaded or renamed copies from videos, file-sharing sites, or private messages.
+
+You can calculate the local checksum in Windows PowerShell:
+
+```powershell
+Get-FileHash -Algorithm SHA256 ".\Galaxy-RBX-Manager.exe"
+```
+
+Galaxy monitors Roblox processes and windows to provide account status, FPS tracking, window layouts, reconnects, and optional screenshots. Security software can treat process-monitoring and automation features more cautiously than an ordinary desktop app. Passwords are entered only on Roblox's website, and Galaxy should never ask you to send anyone your Roblox cookie.
+
+After confirming the official download and checksum, a SmartScreen prompt can be opened with **More info**, followed by **Run anyway**. If the checksum is different or you are unsure where the file came from, do not run it.
+
 ## Updates
 
 Galaxy checks the repository's latest stable Release shortly after startup. When a newer semantic version exists, the centered update window shows the installed and available versions.
@@ -171,6 +198,8 @@ To open the safe demo without Electron:
 ```powershell
 npm.cmd run preview
 ```
+
+Then visit `http://127.0.0.1:4173/?preview=1`. Demo data is not saved and Roblox is not launched.
 
 ## Help & contact
 
