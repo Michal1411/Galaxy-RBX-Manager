@@ -4,94 +4,71 @@
 
 # Galaxy RBX Manager
 
-### A local-first Windows dashboard for your own Roblox accounts.
+### Your Roblox accounts. Every client. One control center.
 
-Launch isolated sessions, arrange clients, watch performance, receive Discord reports, and keep multi-account setups under control from one place.
+Launch isolated sessions, arrange Roblox windows, monitor performance, receive Discord reports, and recover disconnected clients from a polished Windows dashboard.
 
-[![Version](https://img.shields.io/badge/version-1.0.0-7755ff?style=for-the-badge)](../../releases)
-[![Downloads](https://img.shields.io/github/downloads/Michal1411/Galaxy-RBX-Manager/total?style=for-the-badge&logo=github&label=downloads&color=22c7a9)](https://github.com/Michal1411/Galaxy-RBX-Manager/releases)
+[![Release](https://img.shields.io/badge/release-v1.0.0%20beta-7755ff?style=for-the-badge)](../../releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/Michal1411/Galaxy-RBX-Manager/total?style=for-the-badge&logo=github&label=downloads&color=22c7a9)](../../releases)
 ![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-1689ff?style=for-the-badge&logo=windows11&logoColor=white)
 ![Architecture](https://img.shields.io/badge/architecture-x64-18c99a?style=for-the-badge)
 [![Discord](https://img.shields.io/badge/Discord-Michal__141-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/1432824410170982402)
 
 <br>
-<a href="https://github.com/Michal1411/Galaxy-RBX-Manager/releases">
+<a href="https://github.com/Michal1411/Galaxy-RBX-Manager/releases/latest">
   <img src="download-button.svg" width="640" alt="Download Galaxy RBX Manager for Windows">
 </a>
 <br><br>
 
-<p>
-  <a href="#features">Features</a> ·
-  <a href="#screenshots">Screenshots</a> ·
-  <a href="#download">Download</a> ·
-  <a href="#security--privacy">Security</a> ·
-  <a href="#help--contact">Help</a>
-</p>
+<a href="#features">Features</a> &middot;
+<a href="#screenshots">Screenshots</a> &middot;
+<a href="#install">Install</a> &middot;
+<a href="#quick-start">Quick start</a> &middot;
+<a href="#security--privacy">Security</a> &middot;
+<a href="#faq">FAQ</a>
 
 </div>
 
 > [!IMPORTANT]
-> Galaxy RBX Manager is in active development. Use it only with Roblox accounts you own. It is an independent community project and is not affiliated with, endorsed by, or sponsored by Roblox Corporation.
-
-## One dashboard, every client
-
-Galaxy keeps each Roblox website login in its own persistent Electron partition and maps every launched Player process back to the correct local account. The manager is designed for a clear overview even when many clients are running at once.
-
-| Account control | Performance and recovery |
-| --- | --- |
-| Isolated Roblox browser profiles | Per-client FPS, CPU, RAM, and uptime |
-| Sequential multi-account launching | Window layouts across multiple monitors |
-| Groups, search, sorting, and drag ordering | Log-based Auto Reconnect with loop protection |
-| Exact Job ID, Join player, and Low server launch | Scheduled Memory Optimizer and ghost-client cleanup |
+> Galaxy RBX Manager is currently in public beta. Use it only with Roblox accounts you own. Galaxy is an independent community project and is not affiliated with, endorsed by, or sponsored by Roblox Corporation.
 
 ## Features
 
-<table>
-<tr>
-<td width="50%" valign="top">
+### Launching and accounts
 
-### Account Center
+| | |
+| --- | --- |
+| **Isolated profiles** | Each account uses its own persistent Roblox browser session. |
+| **Bulk launch** | Start selected accounts sequentially with a configurable delay. |
+| **Precise joining** | Join with a Place ID, exact Job ID, player target, or the least populated public server. |
+| **Organization** | Sort accounts into colored groups, aliases, and a custom order. |
 
-- Add accounts through the real Roblox login page or protected cookie import.
-- Keep every session isolated and persistent.
-- Launch selected profiles gradually with saved Place ID, Job ID, delay, or player target.
-- Organize accounts into colored, reorderable groups.
+### Monitoring and windows
 
-</td>
-<td width="50%" valign="top">
+| | |
+| --- | --- |
+| **Live client data** | View per-account FPS, CPU, RAM, process state, and uptime. |
+| **Window Manager** | Tile clients horizontally, vertically, or in a custom grid. |
+| **Multiple monitors** | Select one or several displays and save reusable layouts. |
+| **FPS overlay** | Optional click-through badges follow their exact Roblox windows. |
 
-### Window Manager
+### Recovery and reports
 
-- Detect and control visible Roblox windows.
-- Tile clients horizontally, vertically, or into a grid.
-- Target one or several monitors and save reusable layouts.
-- Optional click-through FPS badges follow the exact client window.
+| | |
+| --- | --- |
+| **Auto Reconnect** | Watches Roblox logs for supported disconnect signals and limits retry loops. |
+| **Discord Webhooks** | Send selected events, metrics, and paginated screenshot collages. |
+| **Memory Optimizer** | Trim eligible background clients manually, above a RAM threshold, or on a schedule. |
+| **Activity Console** | See launches, reconnect attempts, maintenance, and errors without exposing secrets. |
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+### Tuning and experience
 
-### Bootstrapper
-
-- Detect the installed and current Roblox Player versions.
-- Apply supported global graphics presets and a custom FPS cap.
-- Clean obsolete Player versions without touching Roblox Studio.
-- Optional launch appearance and high-RAM Memory Optimizer.
-
-</td>
-<td width="50%" valign="top">
-
-### Automation and reports
-
-- Discord Webhooks with selected accounts, metrics, events, and screenshot collages.
-- Auto Reconnect driven by Roblox logs with retry limits.
-- Foreground-safe per-account macros and fixed randomized Anti-AFK.
-- Local activity console showing what the manager is doing.
-
-</td>
-</tr>
-</table>
+| | |
+| --- | --- |
+| **Graphics presets** | Apply allowlisted performance settings globally to installed Roblox Player versions. |
+| **Custom FPS cap** | Reduce load when running many clients at the same time. |
+| **Roblox maintenance** | Detect installations and remove obsolete Player versions without touching Studio. |
+| **Windows integration** | System tray, optional startup, onboarding guide, and an integrated Galaxy title bar. |
 
 ## Screenshots
 
@@ -103,117 +80,108 @@ Galaxy keeps each Roblox website login in its own persistent Electron partition 
 | --- | --- |
 | <img src="window-manager.png" alt="Galaxy Window Manager"> | <img src="discord-webhooks.png" alt="Galaxy Discord Webhooks"> |
 
-### Bootstrapper
+### Bootstrapper and performance tools
 
 ![Galaxy RBX Manager Bootstrapper](bootstrapper.png)
 
-> All screenshots use Galaxy's built-in demo preview. No real Roblox session, cookie, webhook URL, or personal account data is shown.
+> The screenshots use Galaxy's built-in demo preview. No real session cookie, webhook URL, or private account information is shown.
 
-## Download
+## Install
 
-[**Open the latest GitHub Release →**](../../releases/latest)
-
-| Platform | Architecture | Package |
-| :---: | :---: | :---: |
-| Windows 10 / 11 | x64 | Portable `.exe` |
-
-1. Download the newest `Galaxy-RBX-Manager-*-Portable.exe` from Releases.
-2. Keep the EXE in its own folder and open it normally.
-3. Add an account and sign in on the real `roblox.com` page opened by Galaxy.
+1. Open the [latest GitHub Release](../../releases/latest).
+2. Download `Galaxy RBX Manager.exe` and `SHA256SUMS.txt`.
+3. Put the executable in its own folder and verify the checksum if desired.
 4. Start Galaxy before launching multiple Roblox clients.
 
-Windows may show a SmartScreen warning while public code signing is not configured. Always download Galaxy from this repository's official Releases page.
+**Requirements:** Windows 10 or Windows 11 x64 and the desktop Roblox Player. Galaxy is portable and does not require a separate Node.js, Electron, or WebView2 installation.
 
-## Is this a virus? 🛡️
+> [!NOTE]
+> Galaxy is currently unsigned. Windows SmartScreen may show an `unrecognized app` reputation warning on first launch. Download only from this repository and compare the file's SHA-256 with the checksum published in the Release.
 
-The official Galaxy RBX Manager build from this repository is not designed to contain malware or steal credentials. However, Galaxy is currently **closed-source** and its Windows executable is **not digitally signed**, so Windows SmartScreen or antivirus software may show a warning until the app builds enough reputation. A warning alone does not prove that a file is malicious, but you should not ignore it blindly.
+## Quick start
 
-Before running Galaxy:
+1. Select **Add account** and sign in through the real Roblox website opened by Galaxy.
+2. Create groups and choose the accounts you want to run.
+3. Enter a Place ID in **Quick launch**. Job ID, Low Server, delay, and player target are optional.
+4. Select the accounts and press **Launch selected**.
+5. Open **Window Manager** to arrange the clients across your displays.
 
-1. Download it only from this repository's official [GitHub Releases](https://github.com/Michal1411/Galaxy-RBX-Manager/releases).
-2. Compare the downloaded file's SHA-256 with the checksum published in that Release.
-3. Scan the file with Microsoft Defender and, if you want a second opinion, [VirusTotal](https://www.virustotal.com/).
-4. Do not trust reuploaded or renamed copies from videos, file-sharing sites, or private messages.
-
-You can calculate the local checksum in Windows PowerShell:
-
-```powershell
-Get-FileHash -Algorithm SHA256 ".\Galaxy-RBX-Manager.exe"
-```
-
-Galaxy monitors Roblox processes and windows to provide account status, FPS tracking, window layouts, reconnects, and optional screenshots. Security software can treat process-monitoring and automation features more cautiously than an ordinary desktop app. Passwords are entered only on Roblox's website, and Galaxy should never ask you to send anyone your Roblox cookie.
-
-After confirming the official download and checksum, a SmartScreen prompt can be opened with **More info**, followed by **Run anyway**. If the checksum is different or you are unsure where the file came from, do not run it.
-
-## Updates
-
-Galaxy checks the repository's latest stable Release shortly after startup. When a newer semantic version exists, the centered update window shows the installed and available versions.
-
-- The reminder can be closed with **×** or **Remind me in 30 minutes**.
-- It returns every 30 minutes while the older version is still running.
-- A portable build opens the trusted GitHub Release for manual replacement.
-- Once the installed version matches the latest Release, the reminder stops.
-- Published releases remain available until the repository owner deletes them.
-- Galaxy also compares GitHub's SHA-256 Release asset digest with the running portable EXE, so replacing the uploaded portable file can trigger an update even when its version number stays the same.
-
-For example, `v1.0.0` will offer `v1.0.1`. Merely downloading the new EXE does not modify the running `v1.0.0`; start or replace it with `v1.0.1` to complete the update.
-
-See [GITHUB-SETUP.md](GITHUB-SETUP.md) for repository connection and release instructions.
+For large setups, begin with a 10-15 FPS cap and a staggered launch delay. Increase the limit only if the computer remains responsive.
 
 ## Security & privacy
 
-- Passwords are entered only on Roblox's own website.
-- Session cookies are never displayed, logged, copied, or exported by Galaxy.
-- Electron cookie encryption is enabled in packaged builds.
-- Stored credentials and Discord webhook URLs use Electron `safeStorage`, backed by Windows DPAPI for the current Windows user.
-- The renderer has no direct Node.js or filesystem access.
-- Account data stays on the local computer and is not sent to a Galaxy server.
-- Screenshot reports capture selected visible Roblox windows only, never the desktop.
+- Account data and application settings stay on the local Windows computer.
+- Passwords are entered on Roblox's website, not into a Galaxy password form.
+- Session cookies are never printed in the UI, activity log, webhook, or macro export.
+- Packaged builds enable Electron cookie encryption.
+- Sensitive stored values use Electron `safeStorage`, backed by Windows DPAPI for the current user when available.
+- The renderer is sandboxed and has no direct Node.js or filesystem access.
+- Screenshot reports capture selected visible Roblox client windows, not the desktop.
+- Galaxy has no developer-operated analytics or account-sync server.
+
+The application source is not currently public. This repository provides official downloads, checksums, documentation, and issue tracking. Do not download renamed or reuploaded builds from private messages or file-sharing websites.
+
+### Is this a virus?
+
+The official release is not intended to contain malware or steal credentials. However, Galaxy is a new, unsigned application that monitors Roblox processes and windows to provide multi-client features. SmartScreen or antivirus products may therefore treat it more cautiously than a commonly downloaded signed app.
+
+A normal **Windows protected your PC / unrecognized app** prompt is a reputation warning, not a confirmed malware detection. If an antivirus shows a specific malware name, do not bypass it. Verify the download source and SHA-256, scan the file with Microsoft Defender, and request help with the exact detection information.
+
+To calculate the checksum in PowerShell:
+
+```powershell
+Get-FileHash -Algorithm SHA256 ".\Galaxy RBX Manager.exe"
+```
+
+## Updates
+
+Galaxy checks this repository's latest published GitHub Release after startup and every 30 minutes while an update remains available. Portable releases open the trusted GitHub page so the user can download and replace the executable manually. Existing accounts and settings are stored separately and are not removed by replacing the EXE.
+
+## Known beta limitations
+
+- Auto Reconnect is best-effort and cannot recover every disconnect, moderation action, outage, or changed Roblox behavior.
+- Safe macros use foreground input and may briefly switch focus between running clients. Galaxy does not claim invisible background input.
+- FPS tracking can require additional Windows performance permissions and may temporarily display zero under heavy system load.
+- Roblox updates can temporarily affect multi-instance support, process detection, or supported FastFlags.
+
+## FAQ
 
 <details>
-<summary><strong>Where are local settings stored?</strong></summary>
+<summary><strong>Where are my settings stored?</strong></summary>
 
-Open **Settings → Data folder** inside Galaxy. Macro exports default to `Documents\Galaxy RBX Manager\Macro Exports`.
-
-</details>
-
-<details>
-<summary><strong>Why can FPS show 0?</strong></summary>
-
-Per-process FPS uses the official PresentMon console adapter. Some Windows accounts require one-time membership in the built-in Performance Log Users group followed by Windows sign-out.
+Open **Settings -> Data folder** inside Galaxy. Macro exports are stored separately in `Documents\Galaxy RBX Manager\Macro Exports`.
 
 </details>
 
 <details>
 <summary><strong>Does Auto Reconnect always work?</strong></summary>
 
-No automated reconnect can be guaranteed. Galaxy watches Roblox logs for supported disconnect signals and limits retries to avoid reconnect loops, but server restrictions, moderation kicks, outages, and changed Roblox behavior can still require manual action.
+No. Galaxy watches Roblox logs for supported signals and prevents endless retry loops, but some server errors and moderation events still require manual action.
 
 </details>
 
-## Development
+<details>
+<summary><strong>Why does FPS show zero?</strong></summary>
 
-```powershell
-npm.cmd install
-npm.cmd run check
-npm.cmd test
-npm.cmd start
-```
+Per-process FPS uses a PresentMon adapter. Some Windows users need one-time performance-log permission followed by signing out and back into Windows.
 
-To open the safe demo without Electron:
+</details>
 
-```powershell
-npm.cmd run preview
-```
+<details>
+<summary><strong>Can Galaxy run on a school or managed computer?</strong></summary>
+
+The portable application does not require WebView2, but organization policy may block unsigned executables, performance tracing, or Roblox itself. Do not disable administrator-managed security settings.
+
+</details>
 
 ## Help & contact
 
-- Found a bug? Open a GitHub Issue and include the relevant Activity Console entry with secrets removed.
-- Have an idea? Start a GitHub Discussion or feature request.
-- Creator: [**Michal_141 on Discord**](https://discord.com/users/1432824410170982402)
+- Found a reproducible bug? Open a GitHub Issue and attach the relevant Activity Console entry with secrets removed.
+- Have an idea? Open a feature request.
+- Creator: [Michal_141 on Discord](https://discord.com/users/1432824410170982402)
 
 <div align="center">
 
-Made with 💜 by [Michal_141](https://discord.com/users/1432824410170982402)
+Made with care by [Michal_141](https://discord.com/users/1432824410170982402)
 
 </div>
