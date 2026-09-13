@@ -11,7 +11,7 @@ Launch isolated sessions, arrange Roblox windows, monitor performance, receive D
 **Local-first · No telemetry · Sandboxed UI · Encrypted session storage**
 
 [![Release](https://img.shields.io/badge/release-v1.0.0%20beta-7755ff?style=for-the-badge)](../../releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/Michal1411/Galaxy-RBX-Manager/total?style=for-the-badge&logo=github&label=downloads&color=22c7a9)](../../releases)
+[![Downloads](https://img.shields.io/github/downloads/Michal1411/Galaxy-RBX-Manager/total?style=for-the-badge&logo=github&label=downloads&color=22c7a9&cacheSeconds=300&v=1)](../../releases)
 [![VirusTotal](https://img.shields.io/badge/VirusTotal-v1.0.0%20report-394EFF?style=for-the-badge&logo=virustotal&logoColor=white)](https://www.virustotal.com/gui/file/6ef3efe6778de8740416f1e31b3affffe42a1ed6ae182dbcbba6408bc57c47f2)
 ![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-1689ff?style=for-the-badge&logo=windows11&logoColor=white)
 ![Architecture](https://img.shields.io/badge/architecture-x64-18c99a?style=for-the-badge)
